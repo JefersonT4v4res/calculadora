@@ -51,7 +51,6 @@ function handleOperator(nextOperator) {
     } else if (operator) {
         const result = performCalculation[operator](firstOperand, inputValue);
         calculator.displayValue = String(result);
-        calculator.history += String(result);
         calculator.firstOperand = result;
     }
 
